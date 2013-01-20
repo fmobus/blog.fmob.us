@@ -29,8 +29,13 @@ toto = Toto::Server.new do
 
   set :title, 'fmobus'
   set :disqus, 'fmobus-blog'
-  set :styles, 'sass'
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+end
+
+class String
+  def words
+    self.split.count
+  end
 end
 
 run toto

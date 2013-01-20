@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/fmobus/toto
+  remote: https://github.com/ixti/toto
   revision: 5847da2ca5950b129c4c330a1ce023051a4587b6
   specs:
     toto (0.4.9)
