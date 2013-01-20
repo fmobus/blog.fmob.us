@@ -1,18 +1,32 @@
-GEM
-  remote: http://rubygems.org/
+GIT
+  remote: https://github.com/fmobus/toto
+  revision: 5847da2ca5950b129c4c330a1ce023051a4587b6
   specs:
-    builder (3.1.4)
-    rack (1.4.4)
-    rdiscount (1.6.8)
     toto (0.4.9)
       builder
       rack
       rdiscount
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    builder (3.1.4)
+    coderay (1.0.8)
+    method_source (0.8.1)
+    pry (0.9.11.4)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    rack (1.4.4)
+    rdiscount (1.6.8)
+    slop (3.4.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   builder
+  pry
   rack
-  toto
+  rdiscount
+  toto!

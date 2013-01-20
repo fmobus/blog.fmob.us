@@ -8,8 +8,16 @@
 
       <section class="content">
         <%= article.summary %>
+        <div class="more">
+          <span class="words">
+            this article has another
+            <%= article.body.words - article.summary.words %> words,
+          </span>
+          <a href="<%= article.path %>">
+            read on ››
+          </a>
+        </div>
       </section>
-      <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div>
     </article>
   <% end %>
 </section>

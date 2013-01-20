@@ -1,0 +1,34 @@
+---
+title: A new <s>hope</s> blog
+date: 20/01/2013
+
+So, following [Nicholas Pufal][nicholas] steps, I decided to try out
+[toto], a very minimalistic rackup-based blog engine. It is indeed
+pretty neat and simple to setup on [heroku]-like hosting services. It
+also supports [markdown] out-of-the-box, which makes writing way
+easier.
+
+However, as anything open-source out there, the original authors
+of this gem are apparently no longer updating it, and there are some
+bugs left unsolved. One of those [bugs] bit me for a while, chewing
+markdown's link references in post summaries. Fortunately, just as it
+happens oh-so-often with open-source stuff, someone took upon himself
+to fix those bugs in a [fork].
+
+As [Jon Maddog Hall][maddog] usually says: ever wondered what would happen if
+you, a "home" user,  were having a problem in big proprietary
+software? Do you think you'd be given attention? What if I tell you
+that in open-source you don't even _need_ attention, and that you can
+have full control of your running applications? What if I tell you
+that most problems you're going to face have already been solved by
+the community?
+
+What if I tell this open stuff can be awesome?
+
+[toto]:     https://github.com/cloudhead/toto
+[nicholas]: https://github.com/nicholaspufal
+[heroku]:   https://heroku.com
+[bugs]:     https://github.com/cloudhead/toto/pull/97
+[fork]:     https://github.com/ixti/toto
+[maddog]:   http://en.wikipedia.org/wiki/Jon_Hall_(programmer)
+[markdown]: http://daringfireball.net/projects/markdown/syntax
