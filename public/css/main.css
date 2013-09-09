@@ -5,16 +5,18 @@ body {
   font-size: 20px;
   line-height: 30px;
   padding: 15px;
-  width: 720px;
 
 }
 header, footer, section, article {
   display: block;
 }
-.content {
-  margin-top: 1em;
+#main footer {
+  font-size: small;
+  text-align: center;
+  color: lightgray;
 }
-#content {
+section.content {
+  border-bottom: 1px solid lightgray;
 }
 #by {
   font-style: italic;
@@ -32,8 +34,6 @@ header, footer, section, article {
 .date {
   font-style: italic;
   float: right;
-  line-height: 43px;
-  margin-right: 30px;
 }
 a {
   color: #b83000;
@@ -49,8 +49,8 @@ body > header > h1 {
   border-left: 30px solid black;
   padding-left: 30px;
   font-size: 201px;
-  margin: 100px 0 15px 0;
   font-weight: normal;
+  float: left;
 }
 .post header {
   margin-bottom: 10px;
@@ -90,6 +90,15 @@ body > header {
   line-height: 180px;
   margin-bottom: 20px;
 }
+nav {
+  position: absolute;
+  top: 10px;
+  background: white;
+}
+section#main {
+  margin: 0 auto;
+  width: 720px;
+}
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;
@@ -114,4 +123,6 @@ body > footer {
   font-style: italic;
   font-size: 18px;
   color: #888;
+  bottom: 0px;
+  position: absolute;
 }

@@ -3,15 +3,22 @@
   <head>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title><%= title %></title>
   </head>
   <body>
-    <section>
+    <nav>
+      <h1>
+        <a href="/">
+          fmobus' blog
+        </a>
+      </h1>
+    </nav>
+    <section id="main">
       <%= yield %>
     </section>
     <footer>
-      powered by a <a href="https://github.com/fmobus/toto">fork</a> of
+      powered by a <a href="https://github.com/ixti/toto">fork</a> of
       <a href="http://cloudhead.io/toto">toto</a>
     </footer>
   </body>
