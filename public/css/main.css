@@ -16,6 +16,7 @@ header, footer, section, article {
   color: lightgray;
 }
 section.content {
+  clear: both;
   border-bottom: 1px solid lightgray;
 }
 #by {
@@ -97,7 +98,7 @@ nav {
 }
 section#main {
   margin: 0 auto;
-  width: 720px;
+  max-width: 720px;
 }
 h1, h2, h3, h4 {
   display: inline;
@@ -123,6 +124,4 @@ body > footer {
   font-style: italic;
   font-size: 18px;
   color: #888;
-  bottom: 0px;
-  position: absolute;
 }
