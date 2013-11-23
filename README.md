@@ -1,1 +1,1 @@
-just [my dirty-simple blog](http://fmobus.herokuapp.com) using toto
+just [my dirty-simple blog](http://blog.fmob.us) using toto
