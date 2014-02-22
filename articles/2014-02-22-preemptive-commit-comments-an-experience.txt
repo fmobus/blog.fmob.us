@@ -18,24 +18,27 @@ that. And by dirty simple, I mean it. No plugins, no complicated setup. Just
 something I could pull from the top of my mind should I be seating in a weird
 development environment without breaking a sweat or even having to go online.
 
-It's just a file named PENDING...
+It's just a file named `PENDING`...
 
-    √ PlaceIndex supports finding places by name
-    √ PlaceIndex supports getting places by id
-    √ PlaceIndex#find becomes #find_all, may return multiple results
-      PlaceIndex#find supports regex criteria
-      PlaceIndex#get raises exception when no such id
-      extracts common code on Index classes to a module
+<pre>
+√ PlaceIndex supports finding places by name
+√ PlaceIndex supports getting places by id
+√ PlaceIndex#find becomes #find_all, may return multiple results
+  PlaceIndex#find supports regex criteria
+  PlaceIndex#get raises exception when no such id
+  extracts common code on Index classes to a module
+</pre>
 
-... and this simple command line
+... and this simple command line, issued after using `git add -p` to add my
+patches to the commit
 
-    git commit -m "`grep -v √ PENDING | head -n 1`"
+<pre>
+  git commit -m "`grep -v √ PENDING | head -n 1`"
+</pre>
 
 Sure, you could choose other character to mark completion; you could choose to
-erase the line after completion; you could elect to use -a flag in the commit
-line (although I consider that bad practice).
-
-But that's not my point with this exercise.
+erase the line after completion; you could elect to use `-a` flag in the commit
+line - although I consider that bad practice. But that's not my point with this exercise.
 
 My point is that you really ought to create your own protocols and tools for
 personal use sometimes, and strive to keep them simple enough so that it does
