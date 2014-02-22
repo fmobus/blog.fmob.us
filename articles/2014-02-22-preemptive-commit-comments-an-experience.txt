@@ -1,0 +1,48 @@
+---
+title: Preemptive commit comments - an experience
+date: 22/02/2014
+
+Some weeks ago, I was tipped about Arialdo Martini's [brilliant blog post][arialdo-preemptive] by
+[Carlos Vilella][cv]. Didn't give much thought about it at the time, but some
+days ago this subject came up on a team conversation, and now I decided I will
+try to create my own workflow on top of that idea.
+
+So, as you read on Arialdo's blog post (go read it now), the idea is quite
+simple. You just write up your commit messages before even starting to code.
+You basically figure out a strategy for the next transformations you want in
+your code, and log them in advance. This helps you keep focus, and gives you
+space to put stuff you want to do in the short term future.
+
+What I am experimenting with at the moment is a dirty simple workflow based on
+that. And by dirty simple, I mean it. No plugins, no complicated setup. Just
+something I could pull from the top of my mind should I be seating in a weird
+development environment without breaking a sweat or even having to go online.
+
+It's just a file named PENDING...
+
+    √ PlaceIndex supports finding places by name
+    √ PlaceIndex supports getting places by id
+    √ PlaceIndex#find becomes #find_all, may return multiple results
+      PlaceIndex#find supports regex criteria
+      PlaceIndex#get raises exception when no such id
+      extracts common code on Index classes to a module
+
+... and this simple command line
+
+    git commit -m "`grep -v √ PENDING | head -n 1`"
+
+Sure, you could choose other character to mark completion; you could choose to
+erase the line after completion; you could elect to use -a flag in the commit
+line (although I consider that bad practice).
+
+But that's not my point with this exercise.
+
+My point is that you really ought to create your own protocols and tools for
+personal use sometimes, and strive to keep them simple enough so that it does
+not get in your way. It's kind-of like the philosophy behind [Bullet
+Journal][bullet-journal]: simple, personal, effective, like a hacker's tools
+should be.
+
+[cv]:                 http://lixo.org
+[arialdo-preemptive]: http://arialdomartini.wordpress.com/2012/09/03/pre-emptive-commit-comments/
+[bullet-journal]:     http://bulletjournal.com/
