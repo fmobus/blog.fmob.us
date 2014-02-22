@@ -2,8 +2,8 @@ html { margin: 20px }
 body {
   margin: 0 auto;
   font-family: 'Baskerville', Georgia, Times, serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: large;
+  line-height: 1.3em;
   padding: 15px;
 
 }
@@ -108,11 +108,14 @@ h1, h2, h3, h4 {
 ul, li {
   list-style-type: none;
 }
-code {
-  font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
-}
 pre {
-  padding: 20px;
+  padding: 1em;
+  font-family: 'Inconsolata', 'Monaco', 'Courier New';
+  background: #222;
+  color: green;
+}
+code {
+  font-family: monospace;
 }
 blockquote {
   font-style: italic;
