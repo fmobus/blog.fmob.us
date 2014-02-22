@@ -1,6 +1,9 @@
 
 require 'toto'
 
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
 use Rack::CommonLogger
