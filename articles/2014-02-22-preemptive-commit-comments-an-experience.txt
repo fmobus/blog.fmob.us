@@ -2,10 +2,11 @@
 title: Preemptive commit comments - an experience
 date: 22/02/2014
 
-Some weeks ago, I was tipped about Arialdo Martini's [brilliant blog post][arialdo-preemptive] by
-[Carlos Vilella][cv]. Didn't give much thought about it at the time, but some
-days ago this subject came up on a team conversation, and now I decided I will
-try to create my own workflow on top of that idea.
+Some weeks ago, [Carlos Vilella][CV] tipped me about Arialdo Martini's
+[brilliant blog post][arialdo-preemptive] by. Didn't give much thought
+about it at the time, but some days ago this subject came up on a team
+conversation, and now I decided I will try to create my own workflow
+on top of that idea.
 
 So, as you read on Arialdo's blog post (go read it now), the idea is quite
 simple. You just write up your commit messages before even starting to code.
